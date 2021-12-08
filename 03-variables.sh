@@ -15,4 +15,4 @@ c=true    # Boolean
 
 ## Best practice is using along with flower  braces.
 echo a = $a
-echo a in currency = $aUSD
+echo a in currency = ${a}USD
