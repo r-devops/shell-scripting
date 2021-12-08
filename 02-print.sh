@@ -19,6 +19,7 @@ echo Starting Nginx Service
 ## COL - Color Code
 ## m - End of syntax
 ## 0 - TO disable color
+## All the above things should be quoted, either single or double quotes. But prefarably double quotes.
 
 ## Color Codes
 # Red       31
