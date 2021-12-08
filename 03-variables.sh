@@ -13,6 +13,6 @@ c=true    # Boolean
 # 1. $VARNAME , $ preceding to the variable name , Ex: $a to access a variable
 # 2. ${VARNAME}, $ preceding along with variable bounded in flower braces, Ex: ${a}
 
-## Best practice is using along with flower braces.
+## Best practice is using along with flower  braces.
 echo a = $a
-echo a in currency = $$a
+echo a in currency = $aUSD
