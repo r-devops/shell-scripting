@@ -36,4 +36,6 @@ echo -e "\e[34mHello In Blue Color\e[0m"
 echo -e "\e[35mHello In Magenta Color\e[0m"
 echo -e "\e[36mHello In Cyan Color\e[0m"
 
+# Reference : https://misc.flogisoft.com/bash/tip_colors_and_formatting
 
+echo -e "\e[31mNormal Red\e[1;31mBold Red\e[0m"
