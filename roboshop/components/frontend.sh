@@ -1,7 +1,5 @@
 #!/bin/bash
 
-set -e
-
 # yum install nginx -y
 # systemctl enable nginx
 # systemctl start nginx
@@ -25,9 +23,18 @@ set -e
 ## Check whether the script is running as root user or not
 
 
-echo Frontend setup
 yum install nginx -y
+if [ $? -ne 0 ]; then
+  echo "Nginx Install Failed"
+  exit
+fi
+
 curl -s -L -o /tmp/frontend.zip "https://github.com/roboshop-devops-project/frontend/archive/main.zi"
+if [ $? -ne 0 ]; then
+  echo "Nginx Install Failed"
+  exit
+fi
+
 cd /usr/share/nginx/html
 rm -rf *
 unzip /tmp/frontend.zip
