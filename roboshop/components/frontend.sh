@@ -22,10 +22,6 @@
 
 ## Check whether the script is running as root user or not
 
-USER_UID=$(id -u)
-if [ ${USER_UID} -ne 0 ]; then
-  echo -e "\e[1;31mYou should be a root user to perform this script\e[0m"
-  exit
-fi
 
-yum install nginx -y
+echo Frontend setup
+#yum install nginx -y
