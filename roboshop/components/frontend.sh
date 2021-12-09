@@ -26,13 +26,13 @@
 yum install nginx -y
 if [ $? -ne 0 ]; then
   echo "Nginx Install Failed"
-  exit
+  exit 1
 fi
 
 curl -f -s -L -o /tmp/frontend.zip "https://github.com/roboshop-devops-project/frontend/archive/main.zi"
 if [ $? -ne 0 ]; then
   echo "Donwload Frontend Failed"
-  exit
+  exit 1
 fi
 
 cd /usr/share/nginx/html
