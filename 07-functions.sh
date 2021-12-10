@@ -44,4 +44,5 @@ echo Value of b from main = ${b}
 # 1. You declare var in main program and you can access it in function and vice versa
 # 2. You can overwrite variable from main program in function and vice versa.
 
+### You can call one function from another function.
 
